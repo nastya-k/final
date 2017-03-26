@@ -1,0 +1,112 @@
+.position-space-between {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+body {
+    color: #fffefe
+}
+
+.about {
+    background-image: url(about_bg.png);
+    padding-top: 50px;
+    width: 1600px;
+    margin: auto
+}
+
+.about-header {
+    width: 73.125%;
+    padding-right: 5.2%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.about-intro {
+    width: 39.37%;
+    margin: 254px auto;
+    height: 186px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 257px
+}
+
+.position-space-between .about-intro__title {
+    font-size: 48px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 700;
+    margin: 0
+}
+
+.about-intro__delimiter {
+    width: 86px;
+    background-color: #fffefe;
+    padding-bottom: 2px
+}
+
+.about-intro__description {
+    font-size: 22px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    text-align: center
+}
+
+.about-next {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 48px;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.about-next__slide {
+    display: inline-block
+}
+
+.navigation {
+    width: 47%
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.position-space-between .navigation-list__item {
+    font-size: 14px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fffefe
+}
+
+.all-links:hover {
+    text-decoration: none;
+    color: white
+}
+
+.cls-1 {
+    fill: #fff;
+    fill-rule: evenodd;
+    opacity: 0.5
+}
+
+.about-next__slide:hover .cls-1 {
+    opacity: 0.8
+}

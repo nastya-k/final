@@ -1,0 +1,68 @@
+@text-color-2: #222222;  //var
+@font-1: 'Lato', 'Arial', sans-serif;
+@font-2: 'Raleway', 'Arial', sans-serif;
+
+.background_position {  //mixin
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.dolore {
+    background-image: url(background_third.png);
+    width: 100%;
+    padding-top: 77px;
+    .background_position
+    &-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+&-wrapper__content {
+    width: 47.5%;
+}
+&-heading {
+    padding-top: 88px;
+    padding-bottom: 5px;
+    font-family: @font-1;
+    color: #ffffff;
+    font-size: 44.67px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+&-content {
+    font-family: @font-1;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 100;
+    padding-bottom: 60px;
+    width: 91%;
+    margin: 0;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+}
+&-wrapper__image {
+    width: 52.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+&-wrapper__image img {
+    margin-right: 16%;
+}
+&-more {
+    font-family: @font-1;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: left;
+}
+}
+
+.dolore-more:hover {
+    color: #65C6C6;
+}

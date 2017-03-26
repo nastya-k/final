@@ -1,0 +1,120 @@
+@text-color: #fffefe;  //var
+@font-1: 'Lato', 'Arial', sans-serif;
+@font-2: 'Raleway', 'Arial', sans-serif;
+
+.background_position {  //mixin
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    
+body {
+    color: @text-color;
+}
+
+.about {
+    background-image: url(about_bg.png);
+    width: 100%;
+    margin: auto;
+    .background_position 
+    &-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    }
+    &-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin-right: 73px;
+    &__item {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: @font-1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @text-color;
+}
+}
+
+.navigation-list li:nth-child(2) {
+    padding-left: 51px;
+}
+.navigation-list li:nth-child(3) {
+    padding-left: 52px;
+}
+.navigation-list li:nth-child(4) {
+    padding-left: 51px;
+}
+.navigation-list li:nth-child(5) {
+    padding-left: 55px;
+}
+.about-intro {
+    margin: 233px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+    font-size: 48px;
+    font-family: @font-2;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 44px;
+    text-transform: uppercase;
+}
+    &__delimiter {
+    width: 86px;
+    background-color: #fffefe;
+    background-color: white;
+    padding-bottom: 2px;
+    margin-bottom: 36px;
+}
+&__description {
+    font-size: 22px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+}
+
+.all-links:hover {
+    text-decoration: none;
+    color: #65C6C6;
+    opacity: 0.7;
+}
+.about-next {
+    display: flex;
+    padding-bottom: 46px;
+    justify-content: center;
+    padding-top: 17px;
+}
+.about-next__slide {
+    display: inline-block;
+}
+
+.logo__image:hover {
+    fill: white;
+}
+.cls-1 {
+    fill: #fff;
+    fill-rule: evenodd;
+    opacity: 0.5;
+}
+.about-next__slide:hover .cls-1 {
+    opacity: 0.8;
+}

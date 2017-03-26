@@ -1,0 +1,114 @@
+@text-color: #fffefe;  //var
+@font-1: 'Lato', 'Arial', sans-serif;
+@font-2: 'Raleway', 'Arial', sans-serif;
+
+.background_position {  //mixin
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+   
+   
+.our-work {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 112px;
+    padding-bottom: 83px;
+    &__heading {
+    padding-bottom: 66px;
+    font-family: @font-2;
+    color: #222222;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    }
+    &__delimiter {
+    width: 86px;
+    background-color: #222222;
+    padding-bottom: 2px;
+    margin: 0 auto 90px;
+    }
+    &__content {
+    display: flex;
+    justify-content: space-between;
+    }
+    &__wrapper {
+    width: 31.3%;
+    position: relative;
+    }
+    &__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    }
+    &__sign {
+    position: absolute;
+    opacity: 0;
+    bottom: 142px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    }
+    &__text {
+    font-family: @font-1;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+}
+
+.our-work__wrapper:hover .our-work__cover {
+    opacity: 1;
+    transition: opacity .2s ease-in-out .1s;
+}
+.our-work__wrapper:hover .our-work__sign {
+    opacity: 1;
+    transition: opacity .2s ease-in-out .1s;
+    transition-delay: 0.3s;
+}
+.our-work__wrapper:hover .our-work__text {
+    opacity: 1;
+    transition: opacity .2s ease-in-out .1s;
+    transition-delay: 0.3s;
+}
+.grid-button {
+    padding: 80px 0 0 0;
+}
+.our-work__button {
+    margin: auto;
+    text-transform: uppercase;
+    font-family: @font-1;
+    font-size: 24px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 12px 148px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border: solid 3px;
+}
+.our-work__button:hover {
+    /*lighten*/
+    
+    background-color: #65C6C6;
+    transition: .2s ease-in-out .1s;
+}
+.our-work__button:active {
+    /*lighten*/
+    
+    background-color: #65C6C6;
+    transition: .2s ease-in-out .1s;
+}
